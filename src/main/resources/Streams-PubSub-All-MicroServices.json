@@ -1,0 +1,68 @@
+[
+	{
+		"name": "EntitlementsCrud",
+		"topics": [
+			{
+				"name": "EntitlementsCrud",
+				"topic": "EntitlementsCrud",
+				"adapterProducerBeanId": "KafkaApacheProducerContinuous",
+				"adapterConsumerBeanId": "AssetDeploymentCrudConsumerKafka",
+				"usedWhen": "ALL-DB-UPSERTS",
+				"adapterProducerConfig": "kafka-producer-alltopics.properties",
+				"adapterConsumerConfig": "kafka-consumer-alltopics.properties"
+			}
+		]
+	}, {
+		"name": "MedPolicyCrud",
+		"topics": [
+			{
+				"name": "MedPolicyCrud",
+				"topic": "MedPolicyCrud",
+				"adapterProducerBeanId": "KafkaApacheProducerContinuous",
+				"adapterConsumerBeanId": "AssetDeploymentCrudConsumerKafka",
+				"usedWhen": "ALL-DB-UPSERTS",
+				"adapterProducerConfig": "kafka-producer-alltopics.properties",
+				"adapterConsumerConfig": "kafka-consumer-alltopics.properties"
+			}
+		]
+	}, {
+		"name": "ProvidersCrud",
+		"topics": [
+			{
+				"name": "ProvidersCrud",
+				"topic": "ProvidersCrud",
+				"adapterProducerBeanId": "KafkaApacheProducerContinuous",
+				"adapterConsumerBeanId": "AssetDeploymentCrudConsumerKafka",
+				"usedWhen": "ALL-DB-UPSERTS",
+				"adapterProducerConfig": "kafka-producer-alltopics.properties",
+				"adapterConsumerConfig": "kafka-consumer-alltopics.properties"
+			}
+		]
+	}, {
+		"name": "MembersCrud",
+		"topics": [
+			{
+				"name": "MembersCrud",
+				"topic": "MembersCrud",
+				"adapterProducerBeanId": "KafkaApacheProducerContinuous",
+				"adapterConsumerBeanId": "AssetDeploymentCrudConsumerKafka",
+				"usedWhen": "ALL-DB-UPSERTS",
+				"adapterProducerConfig": "kafka-producer-alltopics.properties",
+				"adapterConsumerConfig": "kafka-consumer-alltopics.properties"
+			}
+		]
+	}, {
+		"name": "EClaimsCrud",
+		"topics": [
+			{
+				"name": "EClaimsCrud",
+				"topic": "EClaimsCrud",
+				"adapterProducerBeanId": "KafkaApacheProducerContinuous",
+				"adapterConsumerBeanId": "AssetDeploymentCrudConsumerKafka",
+				"usedWhen": "ALL-DB-UPSERTS",
+				"adapterProducerConfig": "kafka-producer-alltopics.properties",
+				"adapterConsumerConfig": "kafka-consumer-alltopics.properties"
+			}
+		]
+	}
+]
