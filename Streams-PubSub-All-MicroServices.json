@@ -1,10 +1,10 @@
 [
 	{
-		"name": "EntitlementsMasterCrud",
+		"name": "EntitlementsCrud",
 		"topics": [
 			{
-				"name": "EntitlementsMasterCrud",
-				"topic": "EntitlementsMasterCrud",
+				"name": "EntitlementsCrud",
+				"topic": "EntitlementsCrud",
 				"adapterProducerBeanId": "KafkaApacheProducerContinuous",
 				"adapterConsumerBeanId": "AssetDeploymentCrudConsumerKafka",
 				"usedWhen": "ALL-DB-UPSERTS",
@@ -13,11 +13,11 @@
 			}
 		]
 	}, {
-		"name": "MedPolicyMasterCrud",
+		"name": "MedPolicyCrud",
 		"topics": [
 			{
-				"name": "MedPolicyMasterCrud",
-				"topic": "MedPolicyMasterCrud",
+				"name": "MedPolicyCrud",
+				"topic": "MedPolicyCrud",
 				"adapterProducerBeanId": "KafkaApacheProducerContinuous",
 				"adapterConsumerBeanId": "AssetDeploymentCrudConsumerKafka",
 				"usedWhen": "ALL-DB-UPSERTS",
@@ -39,11 +39,11 @@
 			}
 		]
 	}, {
-		"name": "MembersMasterCrud",
+		"name": "MembersCrud",
 		"topics": [
 			{
-				"name": "MembersMasterCrud",
-				"topic": "MembersMasterCrud",
+				"name": "MembersCrud",
+				"topic": "MembersCrud",
 				"adapterProducerBeanId": "KafkaApacheProducerContinuous",
 				"adapterConsumerBeanId": "AssetDeploymentCrudConsumerKafka",
 				"usedWhen": "ALL-DB-UPSERTS",
