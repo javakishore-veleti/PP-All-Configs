@@ -1,0 +1,21 @@
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: entitlements
+          uri: http://localhost:6100/
+          predicates:
+          - Path=/api/services/entitlements/**
+        - id: providers
+          uri: http://localhost:7000/
+          predicates:
+          - Path=/api/services/providers/**
+        - id: members
+          uri: http://localhost:5000/
+          predicates:
+          - Path=/api/services/members/**
+        - id: eclaims
+          uri: http://localhost:8000/
+          predicates:
+          - Path=/api/services/eclaims/**
+          
