@@ -6,10 +6,18 @@
 				"name": "EntitlementsCrud",
 				"topic": "EntitlementsCrud",
 				"adapterProducerBeanId": "KafkaApacheProducerContinuous",
-				"adapterConsumerBeanId": "AssetDeploymentCrudConsumerKafka",
+				"adapterConsumerBeanId": "KafkaApacheConsumerContinuous",
 				"usedWhen": "ALL-DB-UPSERTS",
 				"adapterProducerConfig": "kafka-producer-alltopics.properties",
 				"adapterConsumerConfig": "kafka-consumer-alltopics.properties"
+			}, {
+			
+				"name": "EntitlementsMasterCrud-Consumer",
+				"topic": "EntitlementsMasterCrud",
+				"adapterConsumerBeanId": "KafkaApacheConsumerContinuous",
+				"usedWhen": "MESSAGE-CONSUMER",
+				"adapterConsumerConfig": "kafka-consumer-alltopics.properties",
+				"consumerStartDelaySeconds" : 30
 			}
 		]
 	}, {
@@ -19,7 +27,7 @@
 				"name": "MedPolicyCrud",
 				"topic": "MedPolicyCrud",
 				"adapterProducerBeanId": "KafkaApacheProducerContinuous",
-				"adapterConsumerBeanId": "AssetDeploymentCrudConsumerKafka",
+				"adapterConsumerBeanId": "KafkaApacheConsumerContinuous",
 				"usedWhen": "ALL-DB-UPSERTS",
 				"adapterProducerConfig": "kafka-producer-alltopics.properties",
 				"adapterConsumerConfig": "kafka-consumer-alltopics.properties"
@@ -32,7 +40,7 @@
 				"name": "ProvidersCrud",
 				"topic": "ProvidersCrud",
 				"adapterProducerBeanId": "KafkaApacheProducerContinuous",
-				"adapterConsumerBeanId": "AssetDeploymentCrudConsumerKafka",
+				"adapterConsumerBeanId": "KafkaApacheConsumerContinuous",
 				"usedWhen": "ALL-DB-UPSERTS",
 				"adapterProducerConfig": "kafka-producer-alltopics.properties",
 				"adapterConsumerConfig": "kafka-consumer-alltopics.properties"
@@ -45,7 +53,7 @@
 				"name": "MembersCrud",
 				"topic": "MembersCrud",
 				"adapterProducerBeanId": "KafkaApacheProducerContinuous",
-				"adapterConsumerBeanId": "AssetDeploymentCrudConsumerKafka",
+				"adapterConsumerBeanId": "KafkaApacheConsumerContinuous",
 				"usedWhen": "ALL-DB-UPSERTS",
 				"adapterProducerConfig": "kafka-producer-alltopics.properties",
 				"adapterConsumerConfig": "kafka-consumer-alltopics.properties"
@@ -58,7 +66,7 @@
 				"name": "EClaimsCrud",
 				"topic": "EClaimsCrud",
 				"adapterProducerBeanId": "KafkaApacheProducerContinuous",
-				"adapterConsumerBeanId": "AssetDeploymentCrudConsumerKafka",
+				"adapterConsumerBeanId": "KafkaApacheConsumerContinuous",
 				"usedWhen": "ALL-DB-UPSERTS",
 				"adapterProducerConfig": "kafka-producer-alltopics.properties",
 				"adapterConsumerConfig": "kafka-consumer-alltopics.properties"
