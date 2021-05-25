@@ -10,7 +10,8 @@
 				"usedWhen": "ALL-DB-UPSERTS",
 				"adapterProducerConfig": "kafka-producer-alltopics.properties",
 				"adapterConsumerConfig": "kafka-consumer-alltopics.properties",
-				"consumerStartDelaySeconds" : 30
+				"consumerStartDelaySeconds" : 30,
+				"consumerGroupId" : "pp-consumer-EntitlementsMasterCrud"
 			}, {
 			
 				"name": "EntitlementsMasterCrud-Consumer",
@@ -18,7 +19,8 @@
 				"adapterConsumerBeanId": "KafkaApacheConsumerContinuous",
 				"usedWhen": "MESSAGE-CONSUMER",
 				"adapterConsumerConfig": "kafka-consumer-alltopics.properties",
-				"consumerStartDelaySeconds" : 30
+				"consumerStartDelaySeconds" : 30,
+				"consumerGroupId" : "pp-consumer-EntitlementsMasterCrud"
 			}
 		]
 	}, {
@@ -32,7 +34,8 @@
 				"usedWhen": "ALL-DB-UPSERTS",
 				"adapterProducerConfig": "kafka-producer-alltopics.properties",
 				"adapterConsumerConfig": "kafka-consumer-alltopics.properties",
-				"consumerStartDelaySeconds" : 30
+				"consumerStartDelaySeconds" : 30,
+				"consumerGroupId" : "pp-consumer-MedPolicyMasterCrud"
 			}
 		]
 	}, {
@@ -46,7 +49,8 @@
 				"usedWhen": "ALL-DB-UPSERTS",
 				"adapterProducerConfig": "kafka-producer-alltopics.properties",
 				"adapterConsumerConfig": "kafka-consumer-alltopics.properties",
-				"consumerStartDelaySeconds" : 30
+				"consumerStartDelaySeconds" : 30,
+				"consumerGroupId" : "pp-consumer-ProvidersCrud"
 			}
 		]
 	}, {
@@ -60,7 +64,8 @@
 				"usedWhen": "ALL-DB-UPSERTS",
 				"adapterProducerConfig": "kafka-producer-alltopics.properties",
 				"adapterConsumerConfig": "kafka-consumer-alltopics.properties",
-				"consumerStartDelaySeconds" : 30
+				"consumerStartDelaySeconds" : 30,
+				"consumerGroupId" : "pp-consumer-MembersMasterCrud"
 			}
 		]
 	}, {
@@ -74,7 +79,8 @@
 				"usedWhen": "ALL-DB-UPSERTS",
 				"adapterProducerConfig": "kafka-producer-alltopics.properties",
 				"adapterConsumerConfig": "kafka-consumer-alltopics.properties",
-				"consumerStartDelaySeconds" : 30
+				"consumerStartDelaySeconds" : 30,
+				"consumerGroupId" : "pp-consumer-EClaimsCrud"
 			}
 		]
 	}

@@ -1,15 +1,17 @@
 [
 	{
-		"name": "EntitlementsCrud",
+		"name": "EntitlementsMasterCrud",
 		"topics": [
 			{
-				"name": "EntitlementsCrud",
-				"topic": "EntitlementsCrud",
+				"name": "EntitlementsMasterCrud",
+				"topic": "EntitlementsMasterCrud",
 				"adapterProducerBeanId": "KafkaApacheProducerContinuous",
 				"adapterConsumerBeanId": "KafkaApacheConsumerContinuous",
 				"usedWhen": "ALL-DB-UPSERTS",
 				"adapterProducerConfig": "kafka-producer-alltopics.properties",
-				"adapterConsumerConfig": "kafka-consumer-alltopics.properties"
+				"adapterConsumerConfig": "kafka-consumer-alltopics.properties",
+				"consumerStartDelaySeconds" : 30,
+				"consumerGroupId" : "pp-consumer-EntitlementsMasterCrud"
 			}, {
 			
 				"name": "EntitlementsMasterCrud-Consumer",
@@ -17,20 +19,23 @@
 				"adapterConsumerBeanId": "KafkaApacheConsumerContinuous",
 				"usedWhen": "MESSAGE-CONSUMER",
 				"adapterConsumerConfig": "kafka-consumer-alltopics.properties",
-				"consumerStartDelaySeconds" : 30
+				"consumerStartDelaySeconds" : 30,
+				"consumerGroupId" : "pp-consumer-EntitlementsMasterCrud"
 			}
 		]
 	}, {
-		"name": "MedPolicyCrud",
+		"name": "MedPolicyMasterCrud",
 		"topics": [
 			{
-				"name": "MedPolicyCrud",
-				"topic": "MedPolicyCrud",
+				"name": "MedPolicyMasterCrud",
+				"topic": "MedPolicyMasterCrud",
 				"adapterProducerBeanId": "KafkaApacheProducerContinuous",
 				"adapterConsumerBeanId": "KafkaApacheConsumerContinuous",
 				"usedWhen": "ALL-DB-UPSERTS",
 				"adapterProducerConfig": "kafka-producer-alltopics.properties",
-				"adapterConsumerConfig": "kafka-consumer-alltopics.properties"
+				"adapterConsumerConfig": "kafka-consumer-alltopics.properties",
+				"consumerStartDelaySeconds" : 30,
+				"consumerGroupId" : "pp-consumer-MedPolicyMasterCrud"
 			}
 		]
 	}, {
@@ -43,20 +48,24 @@
 				"adapterConsumerBeanId": "KafkaApacheConsumerContinuous",
 				"usedWhen": "ALL-DB-UPSERTS",
 				"adapterProducerConfig": "kafka-producer-alltopics.properties",
-				"adapterConsumerConfig": "kafka-consumer-alltopics.properties"
+				"adapterConsumerConfig": "kafka-consumer-alltopics.properties",
+				"consumerStartDelaySeconds" : 30,
+				"consumerGroupId" : "pp-consumer-ProvidersCrud"
 			}
 		]
 	}, {
-		"name": "MembersCrud",
+		"name": "MembersMasterCrud",
 		"topics": [
 			{
-				"name": "MembersCrud",
-				"topic": "MembersCrud",
+				"name": "MembersMasterCrud",
+				"topic": "MembersMasterCrud",
 				"adapterProducerBeanId": "KafkaApacheProducerContinuous",
 				"adapterConsumerBeanId": "KafkaApacheConsumerContinuous",
 				"usedWhen": "ALL-DB-UPSERTS",
 				"adapterProducerConfig": "kafka-producer-alltopics.properties",
-				"adapterConsumerConfig": "kafka-consumer-alltopics.properties"
+				"adapterConsumerConfig": "kafka-consumer-alltopics.properties",
+				"consumerStartDelaySeconds" : 30,
+				"consumerGroupId" : "pp-consumer-MembersMasterCrud"
 			}
 		]
 	}, {
@@ -69,7 +78,9 @@
 				"adapterConsumerBeanId": "KafkaApacheConsumerContinuous",
 				"usedWhen": "ALL-DB-UPSERTS",
 				"adapterProducerConfig": "kafka-producer-alltopics.properties",
-				"adapterConsumerConfig": "kafka-consumer-alltopics.properties"
+				"adapterConsumerConfig": "kafka-consumer-alltopics.properties",
+				"consumerStartDelaySeconds" : 30,
+				"consumerGroupId" : "pp-consumer-EClaimsCrud"
 			}
 		]
 	}
